@@ -1,3 +1,4 @@
+package Snippets;
 public class Shadowing {
     static int a=10;
     public static void main(String[] args){

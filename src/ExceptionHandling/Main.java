@@ -1,6 +1,7 @@
+package ExceptionHandling;
+
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println("Hello, World!");
+        ExceptionExample.divide(10,0);
     }
 }

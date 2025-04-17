@@ -8,7 +8,7 @@ public class Greeting {
 
     public static void index(int[] arr, int t){
         BS in=new BS();
-        int ind=BS.binarySearch(arr,t,0,arr.length-1);
+        int ind=BS.binarySearch(arr,t);
         System.out.println("a["+ind+"]");
     }
 
