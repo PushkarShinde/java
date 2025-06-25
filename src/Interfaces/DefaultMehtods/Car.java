@@ -17,5 +17,6 @@ class Car implements Vehicle, FourWheeler {
         FourWheeler.carName();
 
     }
+
 }
 

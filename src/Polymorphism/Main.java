@@ -23,6 +23,24 @@ public class Main {
         Numbers num=new Numbers();
         System.out.println(num.sum(3,6));
         System.out.println(num.sum(2,34,35,2));
+
+
+        // Create objects
+        Animal genericAnimal = new Animal();
+        Dog dog = new Dog();
+        Animal dogAsAnimal = new Dog(); // Polymorphic reference
+
+        // Method Overriding (Run-time Polymorphism)
+        System.out.println("Overriding Examples:");
+        System.out.println(genericAnimal.speak()); // Output: I make a sound
+        System.out.println(dog.speak());           // Output: Woof!
+        System.out.println(dogAsAnimal.speak());   // Output: Woof! (Run-time polymorphism)
+
+        // Method Overloading (Compile-time Polymorphism)
+        System.out.println("\nOverloading Examples:");
+        System.out.println(dog.speak());           // Output: Woof!
+        System.out.println(dog.speak(3));          // Output: Woof! Woof! Woof!
+        System.out.println(dog.speak("Hello"));    // Output: Hello Woof!
     }
 }
 

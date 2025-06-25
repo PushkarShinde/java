@@ -19,7 +19,6 @@ public class Main {
         BoxPrice box5=new BoxPrice();
         System.out.println(box5.l+" "+box5.w+" "+box5.h+" "+box5.weight+" "+box5.cost);
 
-
         Box.greetings();
     }
 }

@@ -4,7 +4,7 @@ public class NiceCar {
     private Engine engine; // declaring an object of type Engine
 
     public NiceCar() {
-        this.engine = new V10Engine(); // assigning memory in the heap for the object, but we must use the constructor of the implementing class.
+        this.engine = new V10Engine(); // assigning memory in the heap for the object, but we must use the constructor of the implementing class, because the interface cannot have constructors.
         // We can never instantiate an Interface. But we can refer to an Object (that implements that interface) by the type of that Interface.
     }
 
@@ -17,6 +17,7 @@ public class NiceCar {
 
     public void displayHorsePower() {
         engine.getHorsePower();
+        engine.getTorque();
     }
 
     public Engine getEngine() {

@@ -2,7 +2,9 @@ package Interfaces;
 
 /**
  * Interfaces in Java: A Complete Guide
- * An interface in Java is a blueprint for a class, defining a set of methods that implementing classes must provide. It is a key feature for achieving abstraction and multiple inheritance in Java. Below, you'll find everything you need to know about interfaces, explained concisely.
+ * An interface in Java is a blueprint for a class, defining a set of methods that implementing classes must provide.
+ * It is a key feature for achieving abstraction and multiple inheritance in Java.
+ * Below, you'll find everything you need to know about interfaces, explained concisely.
  * What is an Interface?
  * An interface is a reference type in Java, similar to a class, but it can only contain:
  * Abstract methods (methods without bodies).
@@ -30,12 +32,12 @@ public class Car implements BreakingSystem, Engine, Transmission{
 
     @Override
     public void ABS() {
-
+        System.out.println("ABS");
     }
 
     @Override
     public void breakPads() {
-
+        System.out.println("BREAKING PADS");
     }
 
     @Override
@@ -60,11 +62,11 @@ public class Car implements BreakingSystem, Engine, Transmission{
 
     @Override
     public void gearBox() {
-
+        System.out.println("V10");
     }
 
     @Override
     public int gears() {
-        return 0;
+        return 6;
     }
 }

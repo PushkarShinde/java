@@ -9,8 +9,13 @@ public class StaticBlock {
         b=a*7;
     }
 
+    public StaticBlock() {
+        System.out.println("In constructor");
+    }
+
     public static void main(String[] args) {
         StaticBlock sb=new StaticBlock();
+        StaticBlock sb1=new StaticBlock();
         System.out.println(StaticBlock.a+" "+StaticBlock.b);
         StaticBlock.b+=3;
         System.out.println(StaticBlock.a+" "+StaticBlock.b);

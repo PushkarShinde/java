@@ -39,6 +39,8 @@ public class Box{
     }
 
     public static void main(String[] args) {
+        Box box=new Box();
+        Box.greetings();
         System.out.println("Running the box");
     }
 

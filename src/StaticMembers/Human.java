@@ -5,7 +5,7 @@ public class Human {
     int age;
     int salary;
     boolean married;
-    static long population=0;
+    static long population=0; // this variable belongs to every human
 
     public Human(String name, int age , int salary, boolean married){
         this.name=name;
